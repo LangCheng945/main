@@ -1,13 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>此網域已經遭到封鎖</title>
+
 <style>
-body {
+html, body {
   margin: 0;
-  background: #000;
+  height: 100%;
 }
+
 .bg {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
+  object-fit: cover;       /* 保持比例並裁切 */
+  object-position: center; /* 永遠置中顯示 */
 }
 </style>
 
-<img class="bg" src="blocked.png">
+</head>
+<body>
+
+<img src="blocked.png" class="bg" alt="封鎖頁">
+
+</body>
+</html>
